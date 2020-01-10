@@ -5,7 +5,7 @@ import Revati from '../reactImages/Revati.JPG'
 function About() {
   return (
     <div className="wrapper">
-      <img src={Revati} />
+      <img src={Revati} id="revati-pic" />
       <div className="innerWrapper">
         <section id="aboutMe">
           <h3>About Me</h3>

@@ -10,6 +10,7 @@ import Footer from './reactImages/Footer';
 import About from './components/About';
 import Contacts from './components/Contacts';
 import Projects from './components/Projects';
+import Photography from './components/Photography';
 
 class App extends Component {
 
@@ -22,6 +23,8 @@ class App extends Component {
             <About />} />
           <Route path="/Projects" render={(props) =>
             <Projects />} />
+          <Route path="/Photography" render={(props) =>
+            <Photography />} />
           <Route path="/Contacts" render={(props) =>
             <Contacts />} />
         </div>

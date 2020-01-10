@@ -18,7 +18,7 @@ header, menu {
 }
 
 #headerWrapper {
-  background-image: url(/images/3.jpg);
+  background-image: url(/images/background.JPG);
   background-size: 100%;
   background-position-y: 50%;
   display: flex;
@@ -83,20 +83,19 @@ menu {
 }
 
 .menuItem {
-  font-size: 1.25vw;
+  font-size: 1.35vw;
   font-weight: 300;
   text-decoration: none;
   color: rgb(233, 210, 180);
   background-color: rgb(0, 0, 0,.75);
   padding: .25vw 4vw;
-  border: 1px solid rgb(233, 210, 180, 0);
+  border: 1px solid rgb(233, 210, 180,0);
   border-radius: 3px;
-  margin: auto 3vw;
+  margin: auto 2vw;
   transition: .25s;
 }
 
 .menuItem:hover {
-  text-shadow: .2vw .2vw rgb(0, 0, 0, .5);
   background-color: rgb(0, 0, 0, .5);
   border: 1px solid rgba(233, 210, 180, 0.664);
 }
@@ -116,7 +115,7 @@ menu {
 }
 
 h3, h4 {
-  font-size: 2vw;
+  font-size: 2.5vw;
   text-align: right;
   letter-spacing: .5vw;
   border-bottom: .1vw dotted black;
@@ -130,22 +129,26 @@ h4 {
 }
 
 p {
+  font-size: 1.5vw;
   line-height: 200%;
 }
 
-img {
+#revati-pic {
   height: 40vw;
-  width: 30vw;
+  /* width: 30vw; */
   object-position: 70% 5%;
   object-fit: cover;
-  border-radius: 1px;
   box-shadow: -2vw -1vw rgba(0, 0, 0);
   margin: auto 4vw;
+  animation-name: fade-in;
+  animation-duration: .75s;
+  animation-iteration-count: 1;
 }
 
 #skills {
   display: flex;
   flex-wrap: wrap;
+  font-size: 1.5vw;
 }
 
 #footerWrapper {
@@ -170,3 +173,12 @@ footer {
   margin: 2vw auto;
   white-space: nowrap;
 }
+
+@keyframes fade-in {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+} 
