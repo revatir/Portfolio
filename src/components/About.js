@@ -1,33 +1,36 @@
 import React from 'react';
 
-import Revati from '../reactImages/Revati.JPG'
+import Revati from '../Images/Revati.JPG'
 
 function About() {
   return (
-    <div className="wrapper">
-      <img src={Revati} id="revati-pic" />
-      <div className="innerWrapper">
+    <div id="about" className="section-wrapper">
+      <img src={Revati} id="revati-pic" alt="Revati" />
+      <div className="about-inner-wrapper">
         <section id="aboutMe">
           <h3>About Me</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum</p>
+          <p>As a tenacious legal specialist turned passionate software developer, my background in corporate-governance and client relations has given me the analytical thinking and collaborative skills needed to build dynamic and responsive web applications. Whether it be elaborate legal records or code, I have an innate ability to break down complex information into comprehensible, intuitive solutions. I believe that the best results are achieved through cross-functional team work with an empathetic and people-centric approach.</p>
         </section>
         <section>
           <h3>Skills</h3>
           <ul id="skills">
             <li>HTML5</li>
             <li>CSS3</li>
-            <li>Javascript</li>
+            <li>Javascript (ES6)</li>
             <li>Git</li>
             <li>GitHub</li>
+            <li>SQL</li>
+            <li>Express</li>
             <li>Node.js</li>
             <li>React</li>
             <li>Ruby</li>
-            <li>SQL</li>
+            <li>Rails</li>
+            <li>Python</li>
           </ul>
         </section>
-        <section>
+        <section id="resume">
           <h3>Resume:</h3>
-          <p>[Insert Resume Here]</p>
+          <a href="https://www.docdroid.net/e1QPOkU/revati-rajabhathor-resume.pdf" target="_blank" rel="noopener noreferrer">Click Here for Resume</a>
         </section>
       </div>
     </div>
