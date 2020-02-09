@@ -54,7 +54,7 @@ function Projects() {
                 Evolving NYC
                 </a>
             </h5>
-            <p>A tool for NYC residents, <a href="http://evolvingnyc.surge.sh/" target="_blank" rel="noopener noreferrer">Evolving NYC</a> tracks reconstruction plans in the city using the NYC Department of Buildings permit database. This application aims to help New Yorkers see the history of change in their community. </p>
+            <p>A tool for NYC residents, <a href="http://evolvingnyc.surge.sh/" target="_blank" rel="noopener noreferrer">Evolving NYC</a> is an application that pulls data from the NYC Department of Buildings permit database to track urban reconstruction plans throughout the years. Its purpose is to help New Yorkers see the history of change in their community as well as future plans for projected change.</p>
             <h6>Technologies Used:</h6>
             <ul>
               <li>React</li>
