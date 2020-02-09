@@ -311,7 +311,7 @@ position: absolute;
   position: relative;
   /* vertical-align: middle; */
   width: 100%;
-  opacity: .7;
+  opacity: 1;
   transition: .6s;
   z-index: 1;
   animation-name: fade-in;
