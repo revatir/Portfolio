@@ -5,7 +5,7 @@ import { resume } from "../../assets"
 
 const Contacts = () => {
   return (
-    <div className="section-wrapper --contact">
+    <div id="contact" className="section-wrapper --contact">
       <h3>Let's Connect:</h3>
       <div className="contact-wrapper">
         <div className="social-email-wrapper">

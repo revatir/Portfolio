@@ -12,6 +12,12 @@
 
     img {
         border-radius: .5rem;
+        transition: .25s;
+  
+        &:hover {
+          transform: scale(.95);
+        }
+      }
     }
   
     .row { 
@@ -27,13 +33,13 @@
     .column {
       flex: 45%;
       position: relative;
-      padding: 0 4px;
+      padding: 5px 10px;
     }
   
     .column img {
+      cursor: pointer;
       position: relative;
       width: 100%;
       opacity: 1;
       z-index: 1;
-    }
   }

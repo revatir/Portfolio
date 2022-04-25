@@ -2,6 +2,7 @@
 
 .section-wrapper.--contact {
     padding: 0 15rem;
+    margin-bottom: 5rem;
     
     h3 {
         padding: 0 0 2rem;
@@ -27,7 +28,6 @@
                 &:hover {
                     color: $base-bg;
                     background-color: $header-hov-text;
-
                 }
             }
         }
