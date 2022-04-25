@@ -1,0 +1,45 @@
+@import '../../styles/global.scss';
+
+.section-wrapper.--contact {
+    padding: 6rem 15rem;
+    margin-bottom: 0;
+
+    h3 {
+      padding: 0 0 2rem;
+      margin-bottom: 1rem;
+    }
+
+    h4 {
+      margin: 3rem 0 1rem;
+    }
+  
+   .contact-inner-wrapper {
+     display: flex;
+
+    .link {
+      font-size: 1rem;
+      padding: .75rem 1rem;
+      border-radius: .5rem;      
+      border: 1px solid rgba($header-hov-text,0);
+      transition: .25s;
+    
+      &:hover {
+        background-color: $base-accent;
+        color: $header-hov-text;
+        border: 1px solid rgba($header-hov-text,1);
+      }
+    }
+  }
+
+  .resume-wrapper {
+    padding-left: 15rem;
+
+    .resume-img {
+      border-radius: .25rem;
+      margin-top: 1rem;
+      height: 20rem;
+      transition: .5s;
+      box-shadow: 1.5rem 1.5rem rgba($base-bg,1);
+    }
+  }
+}
