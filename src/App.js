@@ -1,32 +1,47 @@
-import React, { Component } from 'react';
-import './App.css';
+import React, { useState, useEffect } from "react"
+import "./styles/global.scss"
 
 //Custom Components
-import Menu from './components/Menu';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import About from './components/About';
-import Contact from './components/Contact';
-import Projects from './components/Projects';
-import Photography from './components/Photography';
+import {
+  Menu,
+  Header,
+  About,
+  Contact,
+  Projects,
+  Photography,
+} from "./components"
 
-class App extends Component {
+const App = () => {
+  const [selected, setSelected] = useState("")
+  const [hoverHeader, setHoverHeader] = useState(null)
 
-  render() {
-    return (
-      <div className="App">
-        <Menu />
-        <Header />
-        <div className="siteContent">
-          <About />
-          <Projects />
-          <Photography />
-          <Contact />
-        </div>
-        <Footer />
+  const menuOptions = ["about", "projects", "photography", "contact"]
+
+  useEffect(() => {
+    console.log(hoverHeader)
+  }, [hoverHeader])
+
+  return (
+    <div className="app">
+      <Menu
+        menuOptions={menuOptions}
+        selected={selected}
+        setSelected={setSelected}
+      />
+      <Header
+        selected={selected}
+        setSelected={setSelected}
+        hoverHeader={hoverHeader}
+        setHoverHeader={setHoverHeader}
+      />
+      <div className="scroll-content">
+        <About />
+        <Projects />
+        <Photography />
+        <Contact />
       </div>
-    );
-  }
+    </div>
+  )
 }
 
-export default App;
+export default App

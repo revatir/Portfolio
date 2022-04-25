@@ -1,0 +1,34 @@
+@import '../../styles/global.scss';
+
+menu {
+    overflow: scroll;
+    position: sticky;
+    top: 0;
+    width: 100;
+    background-color: rgba($base-bg,1);
+    z-index: 10;
+  
+    #menu-list {
+      display: flex;
+      justify-content: space-around;
+      padding: 1rem 15rem;
+      border-bottom: 2px solid rgba($base-text,1);
+    }
+  
+    .menu-item {
+      font-size: 1.25rem;
+      letter-spacing: .25rem;
+      border-bottom: 1px solid rgba($base-text,0);
+      text-shadow: 2px 3px rgba($base-accent,1);
+      padding: 0 1rem .25rem;
+      transition: .75s;
+  
+      &.--selected, &:hover {
+        color: $header-hov-text;
+        border-bottom: 1px solid rgba($header-hov-text, .8);
+        text-shadow: 2px 1px rgba($base-text,1);
+      }
+  
+    }
+  }
+  

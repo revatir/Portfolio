@@ -67,39 +67,6 @@ header, menu {
 /* Medium Screen Size */
 @media only screen and (max-width: 1047px) {
 
-/* Contact Section */
-.contact-section-wrapper {
-  padding-top: 5vw;
-  padding-bottom: 10vw;
-  margin: 5vw;
- }
-
- .contact-section-wrapper > h4{
-  font-size: 4vw;
-  margin-bottom: 10vw;
-}
-
- .contact-section-inner-wrapper {
-  padding-top: 0vw;
-  padding-bottom: 0vw;
-  margin-top: -2vw;
- }
-
- .email > h3 {
-  margin: 0 0 3vw 0;
- }
-
- .email > a {
-  font-size: 1.5vw;
-}
-
- .socialmedia > h3 {
-  margin: 0 0 3vw 0;
- }
- .socialmedia > a {
-  font-size: 1.5vw;
-}
-
   footer {
     font-size: 1.25vw;
   };

@@ -1,0 +1,64 @@
+@import '../../styles/global.scss';
+
+.header-section-wrapper {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 90vh;
+  
+    .header-wrapper {
+      cursor: pointer;
+      
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      border-radius: .75rem;
+      max-width: 60rem;
+      padding: 4rem 5rem;
+      transition: .5s;
+  
+      color: $header-hov-text;
+  
+      h1 {
+        text-shadow: 4px 8px $base-text;
+      }
+  
+      &:hover {
+        transform: scale(1.03);
+      }
+  
+      &.--yellow, &:hover {
+        color: $base-bg;
+        background-color: rgba($header-hov-text,1);
+  
+        h1 {
+          text-shadow: 4px 8px $base-text;
+        }
+      }
+  
+    }
+  
+    h1 {
+      font-size: 5.5rem;
+      line-height: 4.5rem;
+      letter-spacing: 1.25rem;
+      margin-bottom: 4rem;
+      text-transform: capitalize;
+      text-align: center;
+      text-shadow: 4px 8px rgba($base-text,1);
+  
+    }
+  
+    h2 {
+      font-size: 1.5rem;
+      letter-spacing: .25rem;
+      opacity: .85;
+    }
+  
+  }
+  
