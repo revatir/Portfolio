@@ -1,0 +1,45 @@
+@import '../../styles/global.scss';
+
+.section-wrapper.--photography {
+    margin: 0;
+    padding: 0 15rem 5rem;
+  
+    h3 {
+      text-align: right;
+      padding: 0 0 3rem;
+      margin: 0 0 2rem;
+    }
+
+    img {
+        border-radius: .5rem;
+        transition: .25s;
+  
+        &:hover {
+          transform: scale(.99);
+        }
+      }
+    }
+  
+    .row { 
+      position: relative;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+  
+      padding: 2rem 0;
+    }
+  
+    /* Create four equal columns that sits next to each other */
+    .column {
+      flex: 45%;
+      position: relative;
+      padding: 5px 10px;
+    }
+  
+    .column img {
+      cursor: pointer;
+      position: relative;
+      width: 100%;
+      opacity: 1;
+      z-index: 1;
+  }

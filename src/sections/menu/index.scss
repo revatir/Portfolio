@@ -1,0 +1,44 @@
+@import '../../styles/global.scss';
+
+menu {
+    overflow: scroll;
+    position: sticky;
+    top: 0;
+    background-color: $menu;
+    z-index: 10;
+
+    display: flex;
+    justify-content: center;
+  
+    .menu-list {
+      display: flex;
+      justify-content: space-around;
+      padding: 1.25rem 5rem 0;
+      width: 50%;
+    }
+  
+    .menu-item {
+      font-size: 1.25rem;
+      letter-spacing: .25rem;
+      border-bottom: 1px solid rgba($base-text,0);
+      margin-bottom: .75rem;
+      text-shadow: 2px 1px rgba($base-accent,1);
+      transition: .5s;
+
+      li {
+        border-radius: .5rem;
+        padding: .25rem 1rem;
+        border: 1px solid rgba($header-hov-text,0);
+        transition: .5s;
+      }
+  
+      &.--selected, &:hover {
+        li { 
+          color: $header-hov-text;
+          border: 1px solid rgba($header-hov-text,1);
+        }
+      }
+  
+    }
+  }
+  

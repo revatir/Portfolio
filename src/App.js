@@ -2,14 +2,7 @@ import React, { useState, useEffect } from "react"
 import "./styles/global.scss"
 
 //Custom Components
-import {
-  Menu,
-  Header,
-  About,
-  Contact,
-  Projects,
-  Photography,
-} from "./components"
+import { Menu, Header, About, Contact, Projects, Photography } from "./sections"
 
 const App = () => {
   const [selected, setSelected] = useState("")
