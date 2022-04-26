@@ -34,7 +34,7 @@ menu {
   
       &.--selected, &:hover {
         li { 
-          color: $header-hov-text;
+          color: $base-text;
           border: 1px solid rgba($header-hov-text,1);
         }
       }

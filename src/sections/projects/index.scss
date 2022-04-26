@@ -11,6 +11,7 @@
     }
 
     .single-project-wrapper {
+        cursor: pointer;
         display: flex;
         justify-content: space-around;
         align-items: center;
@@ -18,7 +19,7 @@
         max-width: 100%;
         transition: .35s;
 
-        padding: 0 15rem;
+        margin: 0 15rem 5rem;
 
         &:hover {
             .single-project-description {
@@ -41,7 +42,6 @@
         }
 
         img {
-            cursor: pointer;
             width: 25rem;     
             border-radius: .75rem;
             margin: 0 auto;
@@ -50,7 +50,6 @@
         }
            
     .single-project-description {
-        cursor: pointer;
         padding: 2rem;
         margin-left: 5rem;
         border: 1px solid rgba($base-text,1);
