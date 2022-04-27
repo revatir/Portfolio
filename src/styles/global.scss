@@ -6,7 +6,6 @@ html {
   max-width: 100vw;
   overflow-x: none;
   display: block;
-  scroll-behavior: smooth;
   overflow-y: scroll;
   overflow-x: hidden;
 
@@ -47,7 +46,10 @@ h3, h4 {
 
 h3 {
 font-size: 4rem;
+letter-spacing: 1rem;
+padding: 0 0 2rem;
 border-bottom: 1px solid rgba($header-hov-text,1);
+text-shadow: 5px 5px rgba($base-text,1);
 }
 
 a {
@@ -115,7 +117,7 @@ header:hover h1 {
 
 h1 {
   font-size: 6.5vw;
-  letter-spacing: 2.5vw;
+  letter-spacing: 2rem;
 }
 
 #subheader {
