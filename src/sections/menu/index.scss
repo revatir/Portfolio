@@ -13,32 +13,39 @@ menu {
     .menu-list {
       display: flex;
       justify-content: space-around;
-      padding: 1.25rem 5rem 0;
-      width: 50%;
+      padding: 1rem;
+      width: 60%;
     }
   
     .menu-item {
       font-size: 1.25rem;
       letter-spacing: .25rem;
-      border-bottom: 1px solid rgba($base-text,0);
-      margin-bottom: .75rem;
       text-shadow: 2px 1px rgba($base-accent,1);
-      transition: .5s;
 
       li {
-        border-radius: .5rem;
         padding: .25rem 1rem;
-        border: 1px solid rgba($header-hov-text,0);
+
+        background-color: rgba($header-hov-text,0);
+        text-shadow: 2px 1px rgba($base-text,0);
+        box-shadow: .4rem .4rem rgba($base-accent,0);
+        border-bottom: 1px solid rgba($base-text,0);
+        
         transition: .5s;
       }
   
       &.--selected, &:hover {
         li { 
-          color: $base-text;
-          border: 1px solid rgba($header-hov-text,1);
+          border-bottom: 1px solid rgba($base-text,1);
+        }
+
+        &.--selected {
+          li { 
+            color: rgba($header-hov-text,1);
+            text-shadow: 2px 2px rgba($base-text,1);
+            border-bottom: 1px solid rgba($header-hov-text,1);
+          }
         }
       }
-  
     }
   }
   

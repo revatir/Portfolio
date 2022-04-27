@@ -3,12 +3,8 @@
 .section-wrapper.--contact {
     padding: 0 15rem;
     margin-bottom: 5rem;
-    
-    h3 {
-        padding: 0 0 2rem;
-    }
 
-    h4{
+    h4 {
         margin: 3.5rem 0 2rem;
     }
 
@@ -17,17 +13,20 @@
 
         .social-email-wrapper {
             a {
-            color: $header-hov-text;
             font-size: 1rem;
-            padding: .75rem 1rem;
+            padding: 1rem 1.5rem;
             border-radius: .5rem;
-            border: 1px solid $header-hov-text;
             margin-right: 1rem;
+
+            color: $header-hov-text;
+            background-color: rgba($base-accent,.25);
+            box-shadow: 0 0 rgba($base-accent,0);
             transition: .5s;
 
                 &:hover {
-                    color: $base-bg;
-                    background-color: $header-hov-text;
+                    color: $base-accent;
+                    background-color: rgba($header-hov-text,1);
+                    box-shadow: .5rem .5rem rgba($base-accent,.75);
                 }
             }
         }
@@ -42,7 +41,8 @@
                 transition: .5s;
     
                 &:hover {
-                    transform: scale(1.01);
+                    transform: scale(1.02);
+                    box-shadow: 1.25rem 1.25rem rgba($header-hov-text,1);
                 }
             }
         }  

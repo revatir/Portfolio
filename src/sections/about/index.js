@@ -56,11 +56,7 @@ const About = () => {
               target="_blank"
               rel="noopener noreferrer"
             >
-              <Img
-                src={resume}
-                className="resume-img hover-scale"
-                alt="resume"
-              />
+              <Img src={resume} className="resume-img" alt="resume" />
             </a>
           </div>
         </div>

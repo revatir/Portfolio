@@ -5,7 +5,6 @@
     text-align: center;
 
     h3 {
-        padding: 0 0 2rem;
         margin: 0 10rem 4rem;
         color: $header-hov-text;
     }
@@ -20,6 +19,14 @@
         transition: .35s;
 
         margin: 0 15rem 5rem;
+
+        img {
+            width: 25rem;     
+            border-radius: .75rem;
+            margin: 0 auto;
+            box-shadow: 1rem 1rem rgba($base-accent,1);
+            transition: .25s;
+        }
 
         &:hover {
             .single-project-description {
@@ -39,14 +46,6 @@
                 box-shadow: 1.25rem 1.25rem rgba($base-accent,1);
             }
 
-        }
-
-        img {
-            width: 25rem;     
-            border-radius: .75rem;
-            margin: 0 auto;
-            box-shadow: 1.15rem 1.15rem rgba($base-accent,1);
-            transition: .25s;
         }
            
     .single-project-description {

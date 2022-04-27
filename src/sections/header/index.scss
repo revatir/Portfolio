@@ -32,7 +32,7 @@
         transform: scale(.98);
       }
   
-      &.--yellow, &:hover {
+      &:hover {
         color: $base-bg;
         background-color: rgba($header-hov-text,1);
   
@@ -40,7 +40,6 @@
           text-shadow: 4px 8px $base-text;
         }
       }
-  
     }
   
     h1 {
