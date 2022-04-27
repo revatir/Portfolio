@@ -3,16 +3,12 @@ import SmoothScroll from "smooth-scroll"
 import "./index.scss"
 
 const Menu = ({ menuOptions, selected, setSelected }) => {
-  const projects = document.querySelector("#projects")
-  const photography = document.querySelector("#photography")
-  const contact = document.querySelector("#contact")
-
   const scroll = new SmoothScroll('a[href*="#"]', {
     easing: "easeInOutQuart",
     offset: function (anchor) {
       const { id } = anchor
       if (id === "projects" || id === "photography" || id === "contact")
-        return 125
+        return 115
       else return 30
     },
   })
